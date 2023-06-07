@@ -237,14 +237,49 @@
     padding-top: 2.4rem;
 }
 
+/* Header styling */
 .header {
     position: relative;
-    height: 10vh;
+    width: 100%;
+    height: 11vh;
     display: flex;
-    justify-content: center;
+    justify-content:space-between;
+    align-items: center;
+    margin: auto 1rem;
+    box-shadow: 5px 5px 5px #aaaaaa;
+   
+}
+.searchContainer{
+    width: 20%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.searchInput{
+    width: 233px;
+    height: 40px;
+    outline: none;
+}
+.searchIcon{
+    font-size: 30px;
+    color: #fff;
+    background-color: #088178;
+    border: none;
+    padding: 2px;
+    border-radius: 5px;
+}
+.searchIcon:hover{
+    background-color: gold;
+    color: white;
+}
+.avtarContainer{
+    width: 160px;
+    display: flex;
+    justify-content: space-around;
     align-items: center;
 }
 
+/* ******************* */
 .bg {
     width: 9em;
     height: 9em;
@@ -252,7 +287,7 @@
     margin: 0 auto;
 }
 
-img {
+.productImg{
     position: absolute;
     right: 1.4rem;
     width: 82%;
@@ -330,4 +365,190 @@ img {
 }
 
 
+/* sell Styling */
 
+button.normal{
+    font-size: 14px;
+    font-weight: 600;
+    padding: 15px 30px;
+    color: #000;
+    background-color: #fff;
+    border-radius: 4px;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    transition: 0.2s;
+  }
+#form-details{
+    display: flex;
+    justify-content: space-between;
+    /* margin: 30px; */
+    padding: 80px;
+    /* border: 1px solid #e1e1e1; */
+  }
+  .ringImgContainer{
+    width: 40%;
+    /* border: 1px solid grey; */
+}
+
+  #form-details form{
+    width: 50%;
+    display: flex;
+    flex-direction:column ;
+    align-items: flex-start;
+  }
+  
+  #form-details form input,
+  #form-details form select,
+  #form-details form textarea{
+    width: 100%;
+    padding: 12px 15px;
+    outline: none;
+    margin-bottom: 20px;
+    border: 1px solid #e1e1e1;
+  }
+  #form-details form button{
+    background-color: #088178;
+    color:white;
+  }
+  #form-details form button:hover{
+    background-color: gold;
+    color:black;
+  }
+  
+  @media (max-width:477px) {
+  #form-details{
+    margin: 10px;
+    padding: 30px 10px;
+    flex-wrap: wrap;
+  }
+  #form-details form{
+    width: 100%;
+    margin-bottom: 30px;
+  }
+}
+
+/* login css */
+.loginMainContainer {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 400px;
+  padding: 2rem;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #333;
+  text-align: center;
+}
+
+.loginSubContainer {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 2rem;
+}
+
+.logButton {
+  padding: 0.5rem 1.5rem;
+  font-size: 14px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #fff;
+  background-color: #4caf50;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.logButton:hover {
+  background-color: #388e3c;
+}
+
+
+.name {
+  width: 100%;
+  padding: 1rem 0.5rem;
+  border: none;
+  border-radius: 5px;
+  background-color: #fff;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+  font-size: 16px;
+  font-weight: 300;
+  color: #333;
+  outline: none;
+  /* margin-bottom: 1rem; */
+}
+
+.loginbtn {
+  width: 100%;
+  padding: 0.5rem;
+  font-size: 18px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #fff;
+  background-color: #2196f3;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 1rem;
+}
+
+.loginbtn:hover {
+  background-color: #0d8bf0;
+}
+
+.closeIcon {
+    position: absolute;
+    /* border:1px solid red; */
+    background-color: gold;
+    border-radius: 50%;
+    padding: 0.5rem;
+    top: 0;
+    right: 0;
+    color: #fff;
+    width: 25px;
+    height: 25px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    cursor: pointer;
+    
+  }
+  
+  .closeIcon:hover {
+    opacity: 0.7;
+  }
+
+  /* Sign Up */
+  .signupContainer{
+    position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 500px;
+  padding: 2rem;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #333;
+  text-align: center;
+  }
+  .signname{
+    width: 100%;
+    padding: 0.5rem;
+    border: none;
+    border-radius: 5px;
+    background-color: #fff;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+    font-size: 16px;
+    font-weight: 300;
+    color: #333;
+    outline: none;
+    margin-bottom: 15px;
+  }
