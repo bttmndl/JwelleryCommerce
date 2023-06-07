@@ -2,8 +2,9 @@ import React, { useState } from "react";
 // import ImagePopup from './styles.css';
 
 
-function ProductCard({ productImage }) {
+function ProductCard({ productInfo }) {
   const [size, setSize] = useState("m");
+  const{ productImage,productTitle,category,material,price,productDetails}=productInfo;
   const [showPopup, setShowPopup] = useState(false);
   const [popupPosition, setPopupPosition] = useState({ x: 0, y: 0 });
 
@@ -28,7 +29,7 @@ function ProductCard({ productImage }) {
       <div className="card">
         <div className="header">
           <div className="bg"></div>
-          <img
+          <img className="productImg"
             src={productImage}
             alt=""
             onMouseEnter={handleMouseEnter}
@@ -45,7 +46,9 @@ function ProductCard({ productImage }) {
         </div>
         <div className="bottom">
           <div className="updata">
-            <h1 className="name">Diamond Ring</h1>
+            <h1 className="name">{productTitle}</h1>
+            <h1 className="name">{price}</h1>
+
             <div className="shoe-size">
               <label htmlFor="s">
                 <input
@@ -77,9 +80,10 @@ function ProductCard({ productImage }) {
                 />
                 <span>44mm</span>
               </label>
+             
             </div>
             <div className="description">
-              Lorem ipsum dolor sit amsen queti consecter narl.
+              {productDetails}
             </div>
           </div>
           <button className="buy">Add to cart</button>
